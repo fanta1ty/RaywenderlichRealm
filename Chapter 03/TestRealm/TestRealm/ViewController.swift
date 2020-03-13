@@ -36,6 +36,12 @@ class ViewController: UIViewController {
             print(type(of: person).className())
             print(person)
         }
+        
+        Example.of("Using @objcMembers") {
+            let article = Article()
+            article.title = "New article about a famous person"
+            print(article)
+        }
     }
 }
 

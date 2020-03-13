@@ -96,9 +96,21 @@ class Person: Object {
         return firstName + " " + last
     }
     
+    let idPropertyName = "id"
+    var temporaryId = 0
+    
     @objc dynamic var key = UUID().uuidString
     override class func primaryKey() -> String? {
         return "key"
+    }
+    
+    override class func indexedProperties() -> [String] {
+        return ["firstName", "lastName"]
+    }
+    
+    @objc dynamic var temporaryUploadId = 0
+    override class func ignoredProperties() -> [String] {
+        return ["temporaryUploadId"]
     }
     
     convenience init(firstName: String, born: Date, id: Int) {

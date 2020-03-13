@@ -17,6 +17,7 @@
 		CE0BA94A241B61E300670C07 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BA949241B61E300670C07 /* Car.swift */; };
 		CE0BA94C241B620300670C07 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BA94B241B620300670C07 /* Person.swift */; };
 		CE0BA94E241B621E00670C07 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BA94D241B621E00670C07 /* Example.swift */; };
+		CEC607D8241BDC7A00EDD17D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC607D7241BDC7A00EDD17D /* Article.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CE0BA949241B61E300670C07 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		CE0BA94B241B620300670C07 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		CE0BA94D241B621E00670C07 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		CEC607D7241BDC7A00EDD17D /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		DBDA66F83ED76B4EA44709F1 /* Pods_TestRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF99128A47F649E8228CD1B2 /* Pods-TestRealm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestRealm.release.xcconfig"; path = "Target Support Files/Pods-TestRealm/Pods-TestRealm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +106,7 @@
 				CE0BA949241B61E300670C07 /* Car.swift */,
 				CE0BA94B241B620300670C07 /* Person.swift */,
 				CE0BA94D241B621E00670C07 /* Example.swift */,
+				CEC607D7241BDC7A00EDD17D /* Article.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC607D8241BDC7A00EDD17D /* Article.swift in Sources */,
 				CE0BA94C241B620300670C07 /* Person.swift in Sources */,
 				CE0BA939241B495500670C07 /* ViewController.swift in Sources */,
 				CE0BA94E241B621E00670C07 /* Example.swift in Sources */,
