@@ -4,6 +4,7 @@
 //
 //  Created by User on 3/13/20.
 //  Copyright © 2020 ThinhNguyen. All rights reserved.
+//  Email: thinhnguyen12389@gmail.com
 //
 
 import Foundation
