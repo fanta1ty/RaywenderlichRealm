@@ -16,6 +16,7 @@
 		CE0BA941241B495C00670C07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0BA93F241B495C00670C07 /* LaunchScreen.storyboard */; };
 		CE0BA94C241B620300670C07 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BA94B241B620300670C07 /* Person.swift */; };
 		CE0BA94E241B621E00670C07 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BA94D241B621E00670C07 /* Example.swift */; };
+		CE16EAC1241F5262002F417F /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16EAC0241F5262002F417F /* Sticker.swift */; };
 		CEDABF37241D2A82000BD6FB /* RepairShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDABF36241D2A82000BD6FB /* RepairShop.swift */; };
 		CEDABF39241D2E77000BD6FB /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDABF38241D2E77000BD6FB /* Car.swift */; };
 		CEDABF3B241D33A2000BD6FB /* Repair.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDABF3A241D33A2000BD6FB /* Repair.swift */; };
@@ -33,6 +34,7 @@
 		CE0BA942241B495C00670C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0BA94B241B620300670C07 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		CE0BA94D241B621E00670C07 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		CE16EAC0241F5262002F417F /* Sticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
 		CEDABF36241D2A82000BD6FB /* RepairShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepairShop.swift; sourceTree = "<group>"; };
 		CEDABF38241D2E77000BD6FB /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		CEDABF3A241D33A2000BD6FB /* Repair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repair.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				CE0BA94B241B620300670C07 /* Person.swift */,
 				CEDABF3A241D33A2000BD6FB /* Repair.swift */,
 				CEDABF36241D2A82000BD6FB /* RepairShop.swift */,
+				CE16EAC0241F5262002F417F /* Sticker.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				CE0BA939241B495500670C07 /* ViewController.swift in Sources */,
 				CEDABF3B241D33A2000BD6FB /* Repair.swift in Sources */,
 				CEDABF37241D2A82000BD6FB /* RepairShop.swift in Sources */,
+				CE16EAC1241F5262002F417F /* Sticker.swift in Sources */,
 				CE0BA94E241B621E00670C07 /* Example.swift in Sources */,
 				CE0BA935241B495500670C07 /* AppDelegate.swift in Sources */,
 				CEDABF39241D2E77000BD6FB /* Car.swift in Sources */,

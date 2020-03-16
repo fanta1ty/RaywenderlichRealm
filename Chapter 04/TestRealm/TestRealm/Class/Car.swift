@@ -19,6 +19,11 @@ class Car: Object {
     @objc dynamic var owner: Person?
     @objc dynamic var shop: RepairShop?
     
+    let repairs = List<Repair>()
+    let plates = List<String>()
+    let checkups = List<Date>()
+    let stickers = List<String>()
+    
     convenience init(brand: String, year: Int) {
         self.init()
         self.brand = brand
