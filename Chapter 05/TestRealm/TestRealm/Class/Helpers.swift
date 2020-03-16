@@ -26,37 +26,20 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-import UIKit
-import RealmSwift
+import Foundation
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-  var window: UIWindow?
+public class Example {
+  public static var beforeEach: (()->Void)? = nil
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    testBackLinks()
-    return true
+  public static func of(_ description: String, action: ()->Void) {
+    beforeEach?()
+    printHeader(description)
+    action()
   }
 
-  private func testBackLinks() {
-    // Setup realm
-    let realm = try! Realm(configuration:
-      Realm.Configuration(deleteRealmIfMigrationNeeded: true))
-    SyncManager.shared.logLevel = .off
-
-    // Your code
-    let myLittleShop = RepairShop("My Little Shop")
-    let car = Car(brand: "BMW", year: 1980)
-    car.shop = myLittleShop
-    
-    try! realm.write({
-        realm.add(car)
-        realm.add(myLittleShop)
-    })
-    
-    print("Cars maintained at \(myLittleShop.name)")
-    print(myLittleShop.maintainedCars)
-    
+  private static func printHeader(_ message: String) {
+    print("\nℹ️ \(message):")
+    let length = Float(message.count + 3) * 1.2
+    print(String(repeating: "—", count: Int(length)))
   }
 }
-

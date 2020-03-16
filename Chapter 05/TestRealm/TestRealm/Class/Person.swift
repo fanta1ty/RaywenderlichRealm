@@ -26,37 +26,44 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-import UIKit
+import Foundation
 import RealmSwift
+import CoreLocation
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-  var window: UIWindow?
+// MARK: - Person
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    testBackLinks()
-    return true
+@objcMembers public class Person: Object {
+  public dynamic var firstName = ""
+  public dynamic var lastName: String?
+
+  public dynamic var born = Date.distantPast
+  public dynamic var deceased: Date?
+
+  public dynamic var isVIP = false
+  public dynamic var allowedPublicationOn: Date?
+  public let aliases = List<String>()
+
+  public dynamic var hairCount: Int64 = 0
+
+  public var isDeceased: Bool {
+    return deceased != nil
   }
 
-  private func testBackLinks() {
-    // Setup realm
-    let realm = try! Realm(configuration:
-      Realm.Configuration(deleteRealmIfMigrationNeeded: true))
-    SyncManager.shared.logLevel = .off
+  public var fullName: String {
+    guard let last = lastName else {
+      return firstName
+    }
+    return "\(firstName) \(last)"
+  }
 
-    // Your code
-    let myLittleShop = RepairShop("My Little Shop")
-    let car = Car(brand: "BMW", year: 1980)
-    car.shop = myLittleShop
-    
-    try! realm.write({
-        realm.add(car)
-        realm.add(myLittleShop)
-    })
-    
-    print("Cars maintained at \(myLittleShop.name)")
-    print(myLittleShop.maintainedCars)
-    
+  public convenience init(firstName: String, born: Date) {
+    self.init()
+    self.firstName = firstName
+    self.born = born
+  }
+
+  public dynamic var key = UUID().uuidString
+  public override static func primaryKey() -> String? {
+    return "key"
   }
 }
-

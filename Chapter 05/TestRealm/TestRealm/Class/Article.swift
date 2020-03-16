@@ -26,37 +26,22 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-import UIKit
+import Foundation
 import RealmSwift
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-  var window: UIWindow?
+// MARK: - Article
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    testBackLinks()
-    return true
-  }
+@objcMembers public class Article: Object {
 
-  private func testBackLinks() {
-    // Setup realm
-    let realm = try! Realm(configuration:
-      Realm.Configuration(deleteRealmIfMigrationNeeded: true))
-    SyncManager.shared.logLevel = .off
+  public dynamic var id = UUID().uuidString
 
-    // Your code
-    let myLittleShop = RepairShop("My Little Shop")
-    let car = Car(brand: "BMW", year: 1980)
-    car.shop = myLittleShop
-    
-    try! realm.write({
-        realm.add(car)
-        realm.add(myLittleShop)
-    })
-    
-    print("Cars maintained at \(myLittleShop.name)")
-    print(myLittleShop.maintainedCars)
-    
+  public dynamic var title: String?
+  public let people = List<Person>()
+
+  public dynamic var author: Person?
+  public dynamic var date: Date?
+
+  public override static func primaryKey() -> String? {
+    return "id"
   }
 }
-
