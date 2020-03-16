@@ -45,6 +45,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     SyncManager.shared.logLevel = .off
 
     // Your code
+    let myLittleShop = RepairShop("My Little Shop")
+    let car = Car(brand: "BMW", year: 1980)
+    car.shop = myLittleShop
+    
+    try! realm.write({
+        realm.add(car)
+        realm.add(myLittleShop)
+    })
+    
+    print("Cars maintained at \(myLittleShop.name)")
+    print(myLittleShop.maintainedCars)
   }
 }
 

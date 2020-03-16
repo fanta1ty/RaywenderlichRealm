@@ -32,6 +32,8 @@ import RealmSwift
 class RepairShop: Object {
   @objc dynamic var name = ""
   @objc dynamic var contact = ""
+    
+    let maintainedCars = LinkingObjects(fromType: Car.self, property: "shop")
 
   convenience init(_ name: String) {
     self.init()
