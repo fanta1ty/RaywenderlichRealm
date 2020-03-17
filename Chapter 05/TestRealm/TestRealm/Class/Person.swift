@@ -67,3 +67,13 @@ import CoreLocation
     return "key"
   }
 }
+
+extension Person {
+    static let fieldHairCount = "hairCount"
+    static let fieldDeceased = "deceased"
+    
+    static func allAliveLikelyBalding(in realm: Realm, hairThreshold: Int = 1000) -> Results<Person> {
+        let predicate = NSPredicate(format: "%K < %d AND %K = nil", Person.fieldHairCount, hairThreshold, Person.fieldDeceased)
+        return realm.objects(Person.self).filter(predicate)
+    }
+}
