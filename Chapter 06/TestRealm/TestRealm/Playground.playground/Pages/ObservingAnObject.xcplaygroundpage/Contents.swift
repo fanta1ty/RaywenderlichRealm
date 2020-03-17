@@ -50,3 +50,14 @@ print("Subscription token: \(token)")
 try! realm.write({
     article.title = "Work in progress"
 })
+
+DispatchQueue.global(qos: .background).async {
+    let realm = try! Realm(configuration: configuration)
+    
+    if let article = realm.object(ofType: Article.self, forPrimaryKey: "new-article") {
+        try! realm.write({
+            article.title = "Actual title"
+            article.author = Person()
+        })
+    }
+}
