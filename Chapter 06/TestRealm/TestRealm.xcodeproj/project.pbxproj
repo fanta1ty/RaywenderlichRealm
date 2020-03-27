@@ -3,99 +3,126 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C74737AAA2562BF9ACBC0940 /* Pods_TestRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE32B17D6249B6B0522F5E8 /* Pods_TestRealm.framework */; };
+		2913760D1A4B32642FD04DF2 /* Pods_TestRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBDA66F83ED76B4EA44709F1 /* Pods_TestRealm.framework */; };
+		CE0BA935241B495500670C07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BA934241B495500670C07 /* AppDelegate.swift */; };
+		CE0BA937241B495500670C07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BA936241B495500670C07 /* SceneDelegate.swift */; };
+		CE0BA939241B495500670C07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BA938241B495500670C07 /* ViewController.swift */; };
+		CE0BA93C241B495500670C07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0BA93A241B495500670C07 /* Main.storyboard */; };
+		CE0BA93E241B495C00670C07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0BA93D241B495C00670C07 /* Assets.xcassets */; };
+		CE0BA941241B495C00670C07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0BA93F241B495C00670C07 /* LaunchScreen.storyboard */; };
+		CE16EACC241F7497002F417F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16EAC8241F7497002F417F /* Person.swift */; };
+		CE16EACD241F7497002F417F /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16EAC9241F7497002F417F /* Article.swift */; };
+		CE16EACE241F7497002F417F /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16EACA241F7497002F417F /* Helpers.swift */; };
+		CE16EACF241F7497002F417F /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE16EACB241F7497002F417F /* Util.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		CED5A3A52420BA8B0029D5CD /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		67D3C95E2D12137AF6C4588B /* Pods-TestRealm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestRealm.release.xcconfig"; path = "Target Support Files/Pods-TestRealm/Pods-TestRealm.release.xcconfig"; sourceTree = "<group>"; };
-		6AE32B17D6249B6B0522F5E8 /* Pods_TestRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAA0BF70C1771A804F1589EB /* Pods-TestRealm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestRealm.debug.xcconfig"; path = "Target Support Files/Pods-TestRealm/Pods-TestRealm.debug.xcconfig"; sourceTree = "<group>"; };
-		CE5DDE6C2420CD33003CA95E /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		CED5A3A72420BA8B0029D5CD /* libTestRealm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTestRealm.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ECF7FB09FB38C51D83A4E6A /* Pods-TestRealm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestRealm.debug.xcconfig"; path = "Target Support Files/Pods-TestRealm/Pods-TestRealm.debug.xcconfig"; sourceTree = "<group>"; };
+		CE0BA931241B495500670C07 /* TestRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0BA934241B495500670C07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE0BA936241B495500670C07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE0BA938241B495500670C07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE0BA93B241B495500670C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE0BA93D241B495C00670C07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE0BA940241B495C00670C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE0BA942241B495C00670C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE16EAC8241F7497002F417F /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CE16EAC9241F7497002F417F /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		CE16EACA241F7497002F417F /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		CE16EACB241F7497002F417F /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		DBDA66F83ED76B4EA44709F1 /* Pods_TestRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF99128A47F649E8228CD1B2 /* Pods-TestRealm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestRealm.release.xcconfig"; path = "Target Support Files/Pods-TestRealm/Pods-TestRealm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CED5A3A42420BA8B0029D5CD /* Frameworks */ = {
+		CE0BA92E241B495500670C07 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C74737AAA2562BF9ACBC0940 /* Pods_TestRealm.framework in Frameworks */,
+				2913760D1A4B32642FD04DF2 /* Pods_TestRealm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7E6C15AF62A93DB8CFC7A7D7 /* Pods */ = {
+		1BD625F7FA869B3E2B779C6B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CAA0BF70C1771A804F1589EB /* Pods-TestRealm.debug.xcconfig */,
-				67D3C95E2D12137AF6C4588B /* Pods-TestRealm.release.xcconfig */,
+				5ECF7FB09FB38C51D83A4E6A /* Pods-TestRealm.debug.xcconfig */,
+				DF99128A47F649E8228CD1B2 /* Pods-TestRealm.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		CED5A39E2420BA8B0029D5CD = {
+		6A31AD279587951BDF136B78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CED5A3A92420BA8B0029D5CD /* TestRealm */,
-				CED5A3A82420BA8B0029D5CD /* Products */,
-				7E6C15AF62A93DB8CFC7A7D7 /* Pods */,
-				D14BFB6B970F72679BBACFE4 /* Frameworks */,
+				DBDA66F83ED76B4EA44709F1 /* Pods_TestRealm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE0BA928241B495500670C07 = {
+			isa = PBXGroup;
+			children = (
+				CE0BA933241B495500670C07 /* TestRealm */,
+				CE0BA932241B495500670C07 /* Products */,
+				1BD625F7FA869B3E2B779C6B /* Pods */,
+				6A31AD279587951BDF136B78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		CED5A3A82420BA8B0029D5CD /* Products */ = {
+		CE0BA932241B495500670C07 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CED5A3A72420BA8B0029D5CD /* libTestRealm.a */,
+				CE0BA931241B495500670C07 /* TestRealm.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CED5A3A92420BA8B0029D5CD /* TestRealm */ = {
+		CE0BA933241B495500670C07 /* TestRealm */ = {
 			isa = PBXGroup;
 			children = (
-				CE5DDE6C2420CD33003CA95E /* Playground.playground */,
+				CE0BA948241B61D700670C07 /* Class */,
+				CE0BA934241B495500670C07 /* AppDelegate.swift */,
+				CE0BA936241B495500670C07 /* SceneDelegate.swift */,
+				CE0BA938241B495500670C07 /* ViewController.swift */,
+				CE0BA93A241B495500670C07 /* Main.storyboard */,
+				CE0BA93D241B495C00670C07 /* Assets.xcassets */,
+				CE0BA93F241B495C00670C07 /* LaunchScreen.storyboard */,
+				CE0BA942241B495C00670C07 /* Info.plist */,
 			);
 			path = TestRealm;
 			sourceTree = "<group>";
 		};
-		D14BFB6B970F72679BBACFE4 /* Frameworks */ = {
+		CE0BA948241B61D700670C07 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				6AE32B17D6249B6B0522F5E8 /* Pods_TestRealm.framework */,
+				CE16EAC9241F7497002F417F /* Article.swift */,
+				CE16EACA241F7497002F417F /* Helpers.swift */,
+				CE16EAC8241F7497002F417F /* Person.swift */,
+				CE16EACB241F7497002F417F /* Util.swift */,
 			);
-			name = Frameworks;
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CED5A3A62420BA8B0029D5CD /* TestRealm */ = {
+		CE0BA930241B495500670C07 /* TestRealm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CED5A3AE2420BA8B0029D5CD /* Build configuration list for PBXNativeTarget "TestRealm" */;
+			buildConfigurationList = CE0BA945241B495C00670C07 /* Build configuration list for PBXNativeTarget "TestRealm" */;
 			buildPhases = (
-				FA256C0777E7814C69E99896 /* [CP] Check Pods Manifest.lock */,
-				CED5A3A32420BA8B0029D5CD /* Sources */,
-				CED5A3A42420BA8B0029D5CD /* Frameworks */,
-				CED5A3A52420BA8B0029D5CD /* CopyFiles */,
+				FEFD697FCC1C0A9172D554BA /* [CP] Check Pods Manifest.lock */,
+				CE0BA92D241B495500670C07 /* Sources */,
+				CE0BA92E241B495500670C07 /* Frameworks */,
+				CE0BA92F241B495500670C07 /* Resources */,
+				CF98242E66D1478A337445BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,25 +130,25 @@
 			);
 			name = TestRealm;
 			productName = TestRealm;
-			productReference = CED5A3A72420BA8B0029D5CD /* libTestRealm.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = CE0BA931241B495500670C07 /* TestRealm.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CED5A39F2420BA8B0029D5CD /* Project object */ = {
+		CE0BA929241B495500670C07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = ThinhNguyen;
 				TargetAttributes = {
-					CED5A3A62420BA8B0029D5CD = {
+					CE0BA930241B495500670C07 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = CED5A3A22420BA8B0029D5CD /* Build configuration list for PBXProject "TestRealm" */;
+			buildConfigurationList = CE0BA92C241B495500670C07 /* Build configuration list for PBXProject "TestRealm" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -129,18 +156,48 @@
 				en,
 				Base,
 			);
-			mainGroup = CED5A39E2420BA8B0029D5CD;
-			productRefGroup = CED5A3A82420BA8B0029D5CD /* Products */;
+			mainGroup = CE0BA928241B495500670C07;
+			productRefGroup = CE0BA932241B495500670C07 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CED5A3A62420BA8B0029D5CD /* TestRealm */,
+				CE0BA930241B495500670C07 /* TestRealm */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		CE0BA92F241B495500670C07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0BA941241B495C00670C07 /* LaunchScreen.storyboard in Resources */,
+				CE0BA93E241B495C00670C07 /* Assets.xcassets in Resources */,
+				CE0BA93C241B495500670C07 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXShellScriptBuildPhase section */
-		FA256C0777E7814C69E99896 /* [CP] Check Pods Manifest.lock */ = {
+		CF98242E66D1478A337445BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestRealm/Pods-TestRealm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestRealm/Pods-TestRealm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestRealm/Pods-TestRealm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEFD697FCC1C0A9172D554BA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -165,17 +222,43 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CED5A3A32420BA8B0029D5CD /* Sources */ = {
+		CE0BA92D241B495500670C07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0BA939241B495500670C07 /* ViewController.swift in Sources */,
+				CE16EACE241F7497002F417F /* Helpers.swift in Sources */,
+				CE0BA935241B495500670C07 /* AppDelegate.swift in Sources */,
+				CE16EACC241F7497002F417F /* Person.swift in Sources */,
+				CE16EACF241F7497002F417F /* Util.swift in Sources */,
+				CE0BA937241B495500670C07 /* SceneDelegate.swift in Sources */,
+				CE16EACD241F7497002F417F /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		CE0BA93A241B495500670C07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE0BA93B241B495500670C07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE0BA93F241B495C00670C07 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE0BA940241B495C00670C07 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		CED5A3AC2420BA8B0029D5CD /* Debug */ = {
+		CE0BA943241B495C00670C07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,7 +318,7 @@
 			};
 			name = Debug;
 		};
-		CED5A3AD2420BA8B0029D5CD /* Release */ = {
+		CE0BA944241B495C00670C07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -289,27 +372,39 @@
 			};
 			name = Release;
 		};
-		CED5A3AF2420BA8B0029D5CD /* Debug */ = {
+		CE0BA946241B495C00670C07 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAA0BF70C1771A804F1589EB /* Pods-TestRealm.debug.xcconfig */;
+			baseConfigurationReference = 5ECF7FB09FB38C51D83A4E6A /* Pods-TestRealm.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				OTHER_LDFLAGS = "-ObjC";
+				DEVELOPMENT_TEAM = 5934F7X3NB;
+				INFOPLIST_FILE = TestRealm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thinhNguyen.TestRealm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		CED5A3B02420BA8B0029D5CD /* Release */ = {
+		CE0BA947241B495C00670C07 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67D3C95E2D12137AF6C4588B /* Pods-TestRealm.release.xcconfig */;
+			baseConfigurationReference = DF99128A47F649E8228CD1B2 /* Pods-TestRealm.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				OTHER_LDFLAGS = "-ObjC";
+				DEVELOPMENT_TEAM = 5934F7X3NB;
+				INFOPLIST_FILE = TestRealm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thinhNguyen.TestRealm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -318,25 +413,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CED5A3A22420BA8B0029D5CD /* Build configuration list for PBXProject "TestRealm" */ = {
+		CE0BA92C241B495500670C07 /* Build configuration list for PBXProject "TestRealm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CED5A3AC2420BA8B0029D5CD /* Debug */,
-				CED5A3AD2420BA8B0029D5CD /* Release */,
+				CE0BA943241B495C00670C07 /* Debug */,
+				CE0BA944241B495C00670C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CED5A3AE2420BA8B0029D5CD /* Build configuration list for PBXNativeTarget "TestRealm" */ = {
+		CE0BA945241B495C00670C07 /* Build configuration list for PBXNativeTarget "TestRealm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CED5A3AF2420BA8B0029D5CD /* Debug */,
-				CED5A3B02420BA8B0029D5CD /* Release */,
+				CE0BA946241B495C00670C07 /* Debug */,
+				CE0BA947241B495C00670C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CED5A39F2420BA8B0029D5CD /* Project object */;
+	rootObject = CE0BA929241B495500670C07 /* Project object */;
 }

@@ -4,5 +4,6 @@
         <page name='ObservingAnObject'/>
         <page name='ObservingACollection'/>
         <page name='CollectionChanges'/>
+        <page name='AvoidNotificationsForGivenTokens'/>
     </pages>
 </playground>
