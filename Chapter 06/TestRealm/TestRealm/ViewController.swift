@@ -20,7 +20,8 @@ class ViewController: UIViewController {
         // ObservingAnObject()
         // ObservingACollection()
         // CollectionChanges()
-        AvoidNotificationsForGivenTokens()
+        // AvoidNotificationsForGivenTokens()
+        RealmWideNotifications()
     }
 }
 
@@ -188,9 +189,50 @@ extension ViewController {
         let people = realm.objects(Person.self)
         
         let token1 = people.observe { changes in
-            
+            switch changes {
+            case .initial:
+                print("Initial notification for token1")
+                
+            case .update:
+                print("Change notification for token1")
+                
+            default:
+                break
+            }
         }
 
+        let token2 = people.observe { changes in
+            switch changes {
+            case .initial:
+                print("Initial notification for token2")
+                
+            case .update:
+                print("Change notification for token2")
+                
+            default:
+                break
+            }
+        }
+        
+        realm.beginWrite()
+        realm.add(Person())
+        try! realm.commitWrite(withoutNotifying: [token2])
+        
+    }
+    
+    func RealmWideNotifications() {
+        Example.of("Realm wide notifications")
+        //: **Setup Realm**
+        let configuration = Realm.Configuration(inMemoryIdentifier: "TemporaryRealm")
+        let realm = try! Realm(configuration: configuration)
+        
+        let token = realm.observe { notification, realm in
+            print(notification)
+        }
+        
+        try! realm.write({
+            
+        })
     }
 }
 
